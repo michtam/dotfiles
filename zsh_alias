@@ -1,0 +1,9 @@
+alias dd='dd status=progress'
+alias xssh='ssh -q -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null"'
+
+alias gpg='gpg2'
+alias mc='mc -b'
+alias grep="grep --color=always"
+alias vim-ro="vim -R"
+alias cdsrc="cd ~/src"
+alias v="vim"
