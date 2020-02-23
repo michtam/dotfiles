@@ -5,5 +5,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%} %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%}"
 
 KUBE_PS1_SYMBOL_USE_IMG=true
+HELM_PROMPT="(%{$fg[white]%}helm%{$reset_color%}:%{$fg[red]%}$HELM_VER%{$reset_color%})"
+
 #RPROMPT=$RPROMPT'$(kube_ps1) '
-PROMPT='[%{$fg_bold[white]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m%{$reset_color%} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)%{$reset_color%}$(kube_ps1)]${NEWLINE}$ '
+PROMPT='[%{$fg_bold[white]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m%{$reset_color%} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)%{$reset_color%}$(kube_ps1)${HELM_PROMPT}]${NEWLINE}$ '

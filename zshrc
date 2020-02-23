@@ -1,5 +1,5 @@
-# If you come from bash you might have to change your $PATH.
 export GOPATH="/home/michtu/go"
+# If you come from bash you might have to change your $PATH.
 export PATH=$GOPATH/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -74,6 +74,7 @@ source $ZSH/oh-my-zsh.sh
 
 . ~/.zsh_env_vars
 . ~/.zsh_alias
+. ~/.zsh_functions
 . ~/.zsh_prompt
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

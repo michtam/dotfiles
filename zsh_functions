@@ -1,0 +1,14 @@
+switch_helm() {
+  BIN_DIR=${HOME}/bin
+  HELM_BIN=${BIN_DIR}/helm
+
+  if [ -z "$1" ]
+  then
+    echo "No argument supplied"
+  fi
+  helm_version=$1
+  
+  ln -sf ${BIN_DIR}/helm${helm_version} ${HELM_BIN}
+  echo "$helm_version" > ${HOME}/.helm_version
+  export HELM_VER=${helm_version}
+}

@@ -1,3 +1,4 @@
 export WORKON_HOME=~/.virtualenvs
 export PIP_VIRTUALENV_BASE=~/.virtualenvs
 export ANSIBLE_VAULT_PASSWORD_FILE="~/.secrets/ansible_vault_pass"
+export HELM_VER=$(cat ~/.helm_version)
