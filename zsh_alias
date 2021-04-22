@@ -1,5 +1,6 @@
 alias dd='dd status=progress'
 alias xssh='ssh -q -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null"'
+alias clear-ssh='find ~/.ssh -type s -delete
 
 alias gpg='gpg2'
 alias mc='mc -b'
@@ -7,3 +8,5 @@ alias grep="grep --color=always"
 alias vim-ro="vim -R"
 alias cdsrc="cd ~/src"
 alias v="vim"
+alias ydiff="ydiff -s"
+alias gdiff="ydiff"
